@@ -1,0 +1,122 @@
+/* =========================================
+   Variables: Fuente y colores
+   ========================================= */
+:root {
+    --fondo-gris: #D9D9D9;
+    --texto-negro: #000000;
+    --detalle-azul: #7998C5;
+    --fuente-serif: 'Merriweather', serif;
+}
+
+html {
+    scroll-padding-top: 65px; 
+    scroll-behavior: smooth; 
+}
+
+/* =========================================
+   Estilos globales
+   ========================================= */
+body {
+    background-color: var(--fondo-gris);
+    color: var(--texto-negro);
+    font-family: var(--fuente-serif);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* =========================================
+   Botones y enlaces (Azul)
+   ========================================= */
+.btn-primary {
+    background-color: var(--detalle-azul);
+    border-color: var(--detalle-azul);
+    color: #ffffff;
+    padding: 10px 24px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #6282b0;
+    border-color: #6282b0;
+}
+
+a {
+    color: var(--detalle-azul);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6282b0;
+}
+
+/* =========================================
+   NavBar
+   ========================================= */
+.navbar {
+    background-color: #ffffff !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--texto-negro) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--detalle-azul) !important;
+}
+
+/* =========================================
+   Extras
+   ========================================= */
+.text-detalle {
+    color: var(--detalle-azul) !important;
+}
+
+/* =========================================
+   Enlace de Instagram
+   ========================================= */
+.instagram-link {
+    color: var(--texto-negro);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.instagram-link svg {
+    fill: #E1306C;
+    transition: fill 0.3s ease;
+}
+
+.instagram-link:hover {
+    color: #E1306C !important;
+}
+
+.instagram-link:hover svg {
+    fill: #E1306C;
+}
+
+/* =========================================
+   Imagen del Hero
+   ========================================= */
+.img-hero-ondas {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border: 8px solid var(--detalle-azul);
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+    background-color: var(--detalle-azul);
+    animation: wave-animation 8s ease-in-out infinite alternate;
+}
+
+/* Efecto opcional: Las ondas se mueven sutilmente */
+@keyframes wave-animation {
+    0% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 40% 60% 50% 50% / 50% 60% 40% 60%;
+    }
+    100% {
+        border-radius: 50% 50% 30% 70% / 50% 30% 70% 50%;
+    }
+}
