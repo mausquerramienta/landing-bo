@@ -115,7 +115,7 @@ a:hover {
     animation: wave-animation 8s ease-in-out infinite alternate;
 }
 
-/* Efecto opcional: Las ondas se mueven sutilmente */
+/* Efecto de las ondas se mueven sutilmente */
 @keyframes wave-animation {
     0% {
         border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -126,4 +126,66 @@ a:hover {
     100% {
         border-radius: 50% 50% 30% 70% / 50% 30% 70% 50%;
     }
+}
+
+/* =========================================
+   Botones de Tratamientos y Modales
+   ========================================= */
+.btn-tratamiento {
+    background-color: var(--fondo-blanco);
+    border: 1px solid #eaeaea;
+    color: var(--texto-azul);
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.btn-tratamiento:hover {
+    background-color: #f8f9fa;
+    color: var(--texto-azul);
+    transform: translateX(5px);
+}
+
+.btn-tratamiento:hover .texto-tratamiento {
+    text-shadow: 1px 1px 2px rgba(53, 75, 85, 0.4); 
+}
+
+/* =========================================
+   Tarjetas de Equipo
+   ========================================= */
+.card-equipo {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-equipo:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1) !important;
+}
+
+/* =========================================
+   Enlace de Facebook
+   ========================================= */
+.facebook-link {
+    color: var(--texto-azul); /* Usa el color base de tus textos */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.facebook-link svg {
+    fill: #1877F2; /* Azul oficial de Facebook */
+    transition: fill 0.3s ease;
+}
+
+.facebook-link:hover {
+    color: #1877F2 !important;
+}
+
+.facebook-link:hover svg {
+    fill: #1877F2;
 }
