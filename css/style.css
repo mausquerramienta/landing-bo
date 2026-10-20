@@ -3,9 +3,9 @@
    ========================================= */
 :root {
     --fondo-blanco: #FFFFFF;
-    --texto-azul: #354B55;
-    --azul-logo: #354B55;
-    --fuente-sans: 'Montserrat', sans-serif;
+    --texto-azul: #1F4150;
+    --azul-logo: #1F4150;
+    --fuente-sans: 'Quicksand', sans-serif;
 }
 
 html {
@@ -20,14 +20,26 @@ body {
     background-color: var(--fondo-blanco);
     color: var(--texto-azul);
     font-family: var(--fuente-sans);
+    font-weight: 400;
+    font-size: 1.15rem;
 }
 
-/* Letra delgada como "DENTAL" en el logo */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+.fw-light {
+    font-weight: 300 !important; /* Light */
 }
 
-/* Clase para simular el grosor de "BIOMEC" en el logo */
+.fw-normal {
+    font-weight: 400 !important; /* Book */
+}
+
+.fw-biomec {
+    font-weight: 600 !important;
+}
+
+h1, h2, h3, h4, h5, h6, .fw-bold, b, strong {
+    font-weight: 700 !important; /* Títulos y resaltados */
+}
+
 .fw-bold, b, strong {
     font-weight: 600 !important; 
 }
@@ -44,8 +56,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-primary:hover {
-    background-color: #24353d;
-    border-color: #24353d;
+    background-color: #122730;
+    border-color: #122730;
 }
 
 a {
@@ -54,7 +66,7 @@ a {
 }
 
 a:hover {
-    color: #24353d;
+    color: #122730;
 }
 
 /* =========================================
