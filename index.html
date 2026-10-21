@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg bg-light sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
-                <img src="assets/Cubrebocas 1.jpg" alt="Logo Dental Biomec" height="40" class="me-2">
+                <img src="assets/Cubrebocas1.jpg" alt="Logo Dental Biomec" height="40" class="me-2">
                 <span class="fw-light">Dental</span> <span class="fw-biomec">Biomec</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -36,59 +36,65 @@
                     <li class="nav-item"><a class="nav-link" href="#facturacion">Facturación</a></li>
                 </ul>
                 <div class="d-flex justify-content-center mt-3 mt-lg-0">
-                    <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola" target="_blank" class="btn btn-primary fw-bold">Agendar Cita</a>
+                    <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola!%0AMe%20interesa%20agendar%20una%20cita" target="_blank" class="btn btn-primary fw-bold">Agendar Cita</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
-    <header id="inicio" class="min-vh-100 d-flex align-items-center pt-5 pb-5">
-        <div class="container">
-            <div class="row align-items-center">
-                
-                <!-- Columna Izquierda: Textos Persuasivos -->
-                <div class="col-lg-6 mb-5 mb-lg-0 text-center text-lg-start">
-                    <!-- Etiqueta de confianza -->
-                    <span class="badge bg-light text-detalle border border-secondary rounded-pill px-3 py-2 mb-3 fw-bold shadow-sm">
-                        ⭐ Atención de Primera en Pachuca
-                    </span>
-                    
-                    <h1 class="display-4 fw-bold mb-3">
-                        Recupera tu <span class="text-detalle">sonrisa</span> con tecnología sin dolor
-                    </h1>
-                    
-                    <p class="lead text-muted mb-4 pe-lg-4">
-                        Especialistas en transformar sonrisas. Agenda tu valoración hoy mismo y descubre por qué cientos de pacientes confían en nuestras manos.
-                    </p>
-                    
-                    <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
-                        <!-- Botón Principal -->
-                        <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola%2C%20quiero%20agendar%20una%20valoraci%C3%B3n" target="_blank" class="btn btn-primary btn-lg fw-bold px-4 shadow">
-                            Agendar Valoración
-                        </a>
-                        
-                        <!-- Botón Secundario -->
-                        <a href="#tratamientos" class="btn btn-outline-secondary btn-lg fw-bold px-4">
-                            Ver tratamientos
-                        </a>
-                    </div>
-                    
-                    <!-- Elemento extra de confianza debajo de los botones -->
-                    <div class="mt-4 pt-2 text-muted small">
-                        <span class="fw-bold text-dark">✓</span> Urgencias dentales
-                        <span class="ms-3 fw-bold text-dark">✓</span> Facilidades de pago
-                    </div>
-                </div>
-
-                <!-- Columna Derecha: Imagen Hero -->
-                <div class="col-lg-6 text-center">
-                    <img src="assets/Logo DB Cuadrado 1.jpg" alt="Paciente sonriendo en consultorio" class="img-fluid img-hero-ondas shadow-lg" style="max-height: 500px; width: 100%; object-fit: cover;">
-                </div>
-                
+    <section id="inicio" class="p-0 mt-5">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
+            <!-- Imágenes -->
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="assets/hero1-escritorio">
+                        <img src="assets/hero1-escritorio.jpg" class="d-block w-100 img-carrusel" alt="Instalaciones Dental Biomec">
+                    </picture>
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-4 mb-4">
+                        <h2 class="fw-bold text-white mb-2">Transformamos tu sonrisa</h2>
+                        <p class="fs-5 mb-0 text-white">Especialistas en crear sonrisas saludables y hermosas.</p>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item" data-bs-interval="5000">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="assets/hero2-escritorio">
+                        <img src="assets/hero2-escritorio.jpg" class="d-block w-100 img-carrusel" alt="Tratamientos dentales">
+                    </picture>
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-4 mb-4">
+                        <h2 class="fw-bold text-white mb-2">Tecnología de Vanguardia</h2>
+                        <p class="fs-5 mb-0 text-white">Atención sin dolor con equipos de última generación.</p>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item" data-bs-interval="5000">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="assets/hero3-celular.jpg">
+                        <img src="assets/hero3-escritorio.jpg" class="d-block w-100 img-carrusel" alt="Equipo Dental Biomec">
+                    </picture>
+                </div>
+            </div>
+
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+            
         </div>
-    </header>
+    </section>
 
     <!-- SECCIONES (Servicios, Casos, etc.) -->
      <!--  Tratamientos -->
@@ -114,37 +120,37 @@
                             </a>
                         </li>
                         <li class="mb-3">
-                            <a href="#" class="btn-tratamiento" data-bs-toggle="modal" data-bs-target="#blanqueamientoDental">
+                            <a href="#" class="btn-tratamiento" data-bs-toggle="modal" data-bs-target="#modalEndodoncia">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-3 text-detalle flex-shrink-0"><path d="M12 2C9.5 2 8 3 8 5V7H6C4 7 3 8 3 10V14C3 16 4 17 6 17H8V20C8 21.5 9.5 22 10.5 22H11C11.5 22 12 21.5 12 21C12 21.5 12.5 22 13 22H13.5C14.5 22 16 21.5 16 20V17H18C20 17 21 16 21 14V10C21 8 20 7 18 7H16V5C16 3 14.5 2 12 2Z"></path><path d="M12 2V22"></path></svg>
-                                <span class="fw-bold texto-tratamiento">Blanqueamiento Dental</span>
+                                <span class="fw-bold texto-tratamiento">Endodoncia</span>
                                 <span class="fs-4 fw-bold text-detalle">+</span>
                             </a>
                         </li>
                         <li class="mb-3">
-                            <a href="#" class="btn-tratamiento" data-bs-toggle="modal" data-bs-target="#limpiezaDentalProfesional">
+                            <a href="#" class="btn-tratamiento" data-bs-toggle="modal" data-bs-target="#modalCirugia">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-3 text-detalle flex-shrink-0"><path d="M12 2C9.5 2 8 3 8 5V7H6C4 7 3 8 3 10V14C3 16 4 17 6 17H8V20C8 21.5 9.5 22 10.5 22H11C11.5 22 12 21.5 12 21C12 21.5 12.5 22 13 22H13.5C14.5 22 16 21.5 16 20V17H18C20 17 21 16 21 14V10C21 8 20 7 18 7H16V5C16 3 14.5 2 12 2Z"></path><path d="M12 2V22"></path></svg>
-                                <span class="fw-bold texto-tratamiento">Limpieza dental profesional</span>
+                                <span class="fw-bold texto-tratamiento">Cirugía</span>
                                 <span class="fs-4 fw-bold text-detalle">+</span>
                             </a>
                         </li>
                         <li class="mb-3">
-                            <a href="#" class="btn-tratamiento" data-bs-toggle="modal" data-bs-target="#carillasDentales">
+                            <a href="#" class="btn-tratamiento" data-bs-toggle="modal" data-bs-target="#modalImplantologia">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-3 text-detalle flex-shrink-0"><path d="M12 2C9.5 2 8 3 8 5V7H6C4 7 3 8 3 10V14C3 16 4 17 6 17H8V20C8 21.5 9.5 22 10.5 22H11C11.5 22 12 21.5 12 21C12 21.5 12.5 22 13 22H13.5C14.5 22 16 21.5 16 20V17H18C20 17 21 16 21 14V10C21 8 20 7 18 7H16V5C16 3 14.5 2 12 2Z"></path><path d="M12 2V22"></path></svg>
-                                <span class="fw-bold texto-tratamiento">Carillas dentales</span>
+                                <span class="fw-bold texto-tratamiento">Implantología</span>
                                 <span class="fs-4 fw-bold text-detalle">+</span>
                             </a>
                         </li>
                         <li class="mb-3">
-                            <a href="#" class="btn-tratamiento" data-bs-toggle="modal" data-bs-target="#resinasDentales">
+                            <a href="#" class="btn-tratamiento" data-bs-toggle="modal" data-bs-target="#modalResinas">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-3 text-detalle flex-shrink-0"><path d="M12 2C9.5 2 8 3 8 5V7H6C4 7 3 8 3 10V14C3 16 4 17 6 17H8V20C8 21.5 9.5 22 10.5 22H11C11.5 22 12 21.5 12 21C12 21.5 12.5 22 13 22H13.5C14.5 22 16 21.5 16 20V17H18C20 17 21 16 21 14V10C21 8 20 7 18 7H16V5C16 3 14.5 2 12 2Z"></path><path d="M12 2V22"></path></svg>
-                                <span class="fw-bold texto-tratamiento">Resinas dentales</span>
+                                <span class="fw-bold texto-tratamiento">Resinas</span>
                                 <span class="fs-4 fw-bold text-detalle">+</span>
                             </a>
                         </li>
                         <li class="mb-3">
-                            <a href="#" class="btn-tratamiento" data-bs-toggle="modal" data-bs-target="#tratamientoEncias">
+                            <a href="#" class="btn-tratamiento" data-bs-toggle="modal" data-bs-target="#modalCarillas">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-3 text-detalle flex-shrink-0"><path d="M12 2C9.5 2 8 3 8 5V7H6C4 7 3 8 3 10V14C3 16 4 17 6 17H8V20C8 21.5 9.5 22 10.5 22H11C11.5 22 12 21.5 12 21C12 21.5 12.5 22 13 22H13.5C14.5 22 16 21.5 16 20V17H18C20 17 21 16 21 14V10C21 8 20 7 18 7H16V5C16 3 14.5 2 12 2Z"></path><path d="M12 2V22"></path></svg>
-                                <span class="fw-bold texto-tratamiento">Tratamiento de encías</span>
+                                <span class="fw-bold texto-tratamiento">Carillas</span>
                                 <span class="fs-4 fw-bold text-detalle">+</span>
                             </a>
                         </li>
@@ -168,20 +174,20 @@
                                 <h6 class="fw-bold text-detalle mb-3">Beneficios del tratamiento:</h6>
                                 <p class="text-muted">Alinea tus dientes mejorando no solo la estética de tu sonrisa, sino también tu mordida, facilitando la limpieza diaria y previniendo el desgaste dental prematuro.</p>
                             </div>
-                            <div>
-                                <img src="assets/fotoOrtodoncia.jpg" class="img-fluid rounded shadow-sm w-100" alt="Ortodoncia">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/fotoOrtodoncia.jpeg" class="img-tratamiento-modal rounded-4 shadow-sm" alt="Ortodoncia">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Blanquamiento dental -->
-        <div class="modal fade" id="blanqueamientoDental" tabindex="-1" aria-hidden="true">
+        <!-- Modal Endodoncia -->
+        <div class="modal fade" id="modalEndodoncia" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content border-0 shadow">
                     <div class="modal-header text-white" style="background-color: var(--azul-logo);">
-                        <h5 class="modal-title fw-bold" id="blanqueamientoDental">Blanquamiento dental</h5>
+                        <h5 class="modal-title fw-bold" id="Endodoncia">Endodoncia</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
                     <div class="modal-body p-4">
@@ -190,20 +196,20 @@
                                 <h6 class="fw-bold text-detalle mb-3">Beneficios del tratamiento:</h6>
                                 <p class="text-muted">Blanquea tus dientes</p>
                             </div>
-                            <div>
-                                <img src="assets/fotoBlanqueamiento.jpg" class="img-fluid rounded shadow-sm w-100" alt="Blanqueamiento Dental">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/fotoEndodoncia.jpeg" class="img-tratamiento-modal rounded-4 shadow-sm" alt="Endodoncia">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Limpieza dental profesional -->
-        <div class="modal fade" id="limpiezaDentalProfesional" tabindex="-1" aria-hidden="true">
+        <!-- Modal Cirugía -->
+        <div class="modal fade" id="modalCirugia" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content border-0 shadow">
                     <div class="modal-header text-white" style="background-color: var(--azul-logo);">
-                        <h5 class="modal-title fw-bold" id="limpiezaDentalProfesional">Limpieza dental profesional</h5>
+                        <h5 class="modal-title fw-bold" id="Cirugia">Cirugía</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
                     <div class="modal-body p-4">
@@ -212,20 +218,20 @@
                                 <h6 class="fw-bold text-detalle mb-3">Beneficios del tratamiento:</h6>
                                 <p class="text-muted">Limpieza dental profesional.</p>
                             </div>
-                            <div>
-                                <img src="assets/limpiezaDental.jpg" class="img-fluid rounded shadow-sm w-100" alt="Limpieza Dental Profesional">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/fotoCirugia.jpeg" class="img-tratamiento-modal rounded-4 shadow-sm" alt="Cirugía">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Carillas dentales-->
-        <div class="modal fade" id="carillasDentales" tabindex="-1" aria-hidden="true">
+        <!-- Modal Implantología-->
+        <div class="modal fade" id="modalImplantologia" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content border-0 shadow">
                     <div class="modal-header text-white" style="background-color: var(--azul-logo);">
-                        <h5 class="modal-title fw-bold" id="carillasDentales">Carillas dentales</h5>
+                        <h5 class="modal-title fw-bold" id="Implantologia">Implantología</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
                     <div class="modal-body p-4">
@@ -234,20 +240,20 @@
                                 <h6 class="fw-bold text-detalle mb-3">Beneficios del tratamiento:</h6>
                                 <p class="text-muted">Carillas para dientes.</p>
                             </div>
-                            <div>
-                                <img src="assets/fotoCarillas.jpg" class="img-fluid rounded shadow-sm w-100" alt="Carillas">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/fotoImplantologia.jpeg" class="img-tratamiento-modal rounded-4 shadow-sm" alt="Implantología">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Resinas dentales-->
-        <div class="modal fade" id="resinasDentales" tabindex="-1" aria-hidden="true">
+        <!-- Modal Resinas-->
+        <div class="modal fade" id="modalResinas" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content border-0 shadow">
                     <div class="modal-header text-white" style="background-color: var(--azul-logo);">
-                        <h5 class="modal-title fw-bold" id="resinasDentales">Resinas dentales</h5>
+                        <h5 class="modal-title fw-bold" id="Resinas">Resinas</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
                     <div class="modal-body p-4">
@@ -256,19 +262,20 @@
                                 <h6 class="fw-bold text-detalle mb-3">Beneficios del tratamiento:</h6>
                                 <p class="text-muted">Resinas para dientes.</p>
                             </div>
-                            <div>
-                                <img src="assets/fotoResinas.jpg" class="img-fluid rounded shadow-sm w-100" alt="Resinas para dientes">
+                            <div class="col-md-5 text-center">
+                                <img src="assets/fotoResinas.jpeg" class="img-tratamiento-modal rounded-4 shadow-sm" alt="Resinas">
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal Tratamiento de encías-->
-        <div class="modal fade" id="tratamientoEncias" tabindex="-1" aria-hidden="true">
+        <!-- Modal Carillas-->
+        <div class="modal fade" id="modalCarillas" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content border-0 shadow">
                     <div class="modal-header text-white" style="background-color: var(--azul-logo);">
-                        <h5 class="modal-title fw-bold" id="tratamientoEncias">Tratamiento de encías</h5>
+                        <h5 class="modal-title fw-bold" id="Carillas">Carillas</h5>
                         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
                     <div class="modal-body p-4">
@@ -277,8 +284,8 @@
                                 <h6 class="fw-bold text-detalle mb-3">Beneficios del tratamiento:</h6>
                                 <p class="text-muted">Tratamiento para las encías.</p>
                             </div>
-                            <div>
-                                <img src="assets/fotoTratamientoEncias.jpg" class="img-fluid rounded shadow-sm w-100" alt="Tratamiento para encías"> 
+                            <div class="col-md-5 text-center">
+                                <img src="assets/fotoCarillas.jpeg" class="img-tratamiento-modal rounded-4 shadow-sm" alt="Carillas"> 
                             </div>
                         </div>
                     </div>
@@ -291,72 +298,61 @@
     <section id="equipo" class="py-5" style="background-color: var(--fondo-blanco);">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="fw-bold">Conoce a Nuestro Equipo</h2>
+                <h2 class="fw-bold">Conoce a nuestro equipo</h2>
                 <p class="text-muted">Especialistas apasionados por el cuidado de tu salud dental.</p>
             </div>
 
-            <div class="row g-4">
-                <!-- Integrante 1 -->
+            <div class="row g-4 justify-content-center">
+                <!-- Doctor 1 -->
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm text-center py-4 rounded-4 card-equipo" data-bs-toggle="modal" data-bs-target="#modalDr1">
-                        <img src="assets/fotoDr1.jpg" class="rounded-circle mx-auto mb-3 border border-3" alt="Dr. Nombre" style="width: 120px; height: 120px; object-fit: cover; border-color: var(--azul-logo) !important;">
+                        <img src="assets/fotoDr1.jpg" class="rounded-circle mx-auto mb-3 border border-3" alt="Dra. Erika" style="width: 120px; height: 120px; object-fit: cover; border-color: var(--azul-logo) !important;">
                         <div class="card-body p-0">
-                            <h5 class="fw-bold mb-1">Dr. Nombre Apellido</h5>
+                            <h5 class="fw-bold mb-1">Dra. Erika</h5>
                             <p class="text-detalle small mb-0">Especialidad</p>
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta Integrante 2 -->
+                <!-- Doctor 2 -->
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm text-center py-4 rounded-4 card-equipo" data-bs-toggle="modal" data-bs-target="#modalDr2">
-                        <img src="assets/doctor2.jpg" class="rounded-circle mx-auto mb-3 border border-3" alt="Dra. Nombre" style="width: 120px; height: 120px; object-fit: cover; border-color: var(--azul-logo) !important;">
+                        <img src="assets/fotoDr2.jpg" class="rounded-circle mx-auto mb-3 border border-3" alt="Dr. Marco" style="width: 120px; height: 120px; object-fit: cover; border-color: var(--azul-logo) !important;">
                         <div class="card-body p-0">
-                            <h5 class="fw-bold mb-1">Dra. Nombre Apellido</h5>
+                            <h5 class="fw-bold mb-1">Dr. Marco</h5>
                             <p class="text-detalle small mb-0">Especialidad</p>
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta Integrante 3 -->
+                <!-- Doctor 3 -->
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm text-center py-4 rounded-4 card-equipo" data-bs-toggle="modal" data-bs-target="#modalDr1">
-                        <img src="assets/doctor3.jpg" class="rounded-circle mx-auto mb-3 border border-3" alt="Dr. Nombre" style="width: 120px; height: 120px; object-fit: cover; border-color: var(--azul-logo) !important;">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 rounded-4 card-equipo" data-bs-toggle="modal" data-bs-target="#modalDr3">
+                        <img src="assets/fotoDr3.jpg" class="rounded-circle mx-auto mb-3 border border-3" alt="Dra. Ariadne" style="width: 120px; height: 120px; object-fit: cover; border-color: var(--azul-logo) !important;">
                         <div class="card-body p-0">
-                            <h5 class="fw-bold mb-1">Dr. Nombre Apellido</h5>
+                            <h5 class="fw-bold mb-1">Dra. Ariadne</h5>
                             <p class="text-detalle small mb-0">Especialidad</p>
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta Integrante 4 -->
+                <!-- Doctor 4 -->
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm text-center py-4 rounded-4 card-equipo" data-bs-toggle="modal" data-bs-target="#modalDr1">
-                        <img src="assets/doctor4.jpg" class="rounded-circle mx-auto mb-3 border border-3" alt="Dra. Nombre" style="width: 120px; height: 120px; object-fit: cover; border-color: var(--azul-logo) !important;">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 rounded-4 card-equipo" data-bs-toggle="modal" data-bs-target="#modalDr4">
+                        <img src="assets/fotoDr4.jpg" class="rounded-circle mx-auto mb-3 border border-3" alt="Dra. Yaz" style="width: 120px; height: 120px; object-fit: cover; border-color: var(--azul-logo) !important;">
                         <div class="card-body p-0">
-                            <h5 class="fw-bold mb-1">Dra. Nombre Apellido</h5>
+                            <h5 class="fw-bold mb-1">Dra. Yaz</h5>
                             <p class="text-detalle small mb-0">Especialidad</p>
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta Integrante 5 -->
+                <!-- Doctor 5 -->
                 <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm text-center py-4 rounded-4 card-equipo" data-bs-toggle="modal" data-bs-target="#modalDr1">
-                        <img src="assets/doctor5.jpg" class="rounded-circle mx-auto mb-3 border border-3" alt="Dr. Nombre" style="width: 120px; height: 120px; object-fit: cover; border-color: var(--azul-logo) !important;">
+                    <div class="card h-100 border-0 shadow-sm text-center py-4 rounded-4 card-equipo" data-bs-toggle="modal" data-bs-target="#modalDr5">
+                        <img src="assets/fotoDr5.jpg" class="rounded-circle mx-auto mb-3 border border-3" alt="Dra. Yesi" style="width: 120px; height: 120px; object-fit: cover; border-color: var(--azul-logo) !important;">
                         <div class="card-body p-0">
-                            <h5 class="fw-bold mb-1">Dr. Nombre Apellido</h5>
+                            <h5 class="fw-bold mb-1">Dra. Yesi</h5>
                             <p class="text-detalle small mb-0">Especialidad</p>
                         </div>
                     </div>
                 </div>
-                <!-- Tarjeta Integrante 6 -->
-                <div class="col-md-4">
-                    <div class="card h-100 border-0 shadow-sm text-center py-4 rounded-4 card-equipo" data-bs-toggle="modal" data-bs-target="#modalDr1">
-                        <img src="assets/doctor6.jpg" class="rounded-circle mx-auto mb-3 border border-3" alt="Dra. Nombre" style="width: 120px; height: 120px; object-fit: cover; border-color: var(--azul-logo) !important;">
-                        <div class="card-body p-0">
-                            <h5 class="fw-bold mb-1">Dra. Nombre Apellido</h5>
-                            <p class="text-detalle small mb-0">Especialidad</p>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
 
@@ -371,14 +367,14 @@
                     
                     <div class="modal-body p-5 pt-4">
                         <div class="text-center mb-5 mt-2">
-                            <h2 class="fw-bold text-detalle mb-1">Dr. Nombre Apellido</h2>
+                            <h2 class="fw-bold text-detalle mb-1">Dra. Erika</h2>
                             <h5 class="text-muted fw-light">Especialista en Ortodoncia</h5>
                         </div>
                         
                         <div class="row align-items-center">
                             <!-- Imagen -->
                             <div class="col-md-5 mb-4 mb-md-0 text-center">
-                                <img src="assets/fotoDr1.jpg" class="img-fluid rounded-4 shadow" alt="Dr. Nombre" style="max-height: 300px; object-fit: cover;">
+                                <img src="assets/fotoDr1.jpg" class="img-fluid rounded-4 shadow" alt="Dra. Erika" style="max-height: 300px; object-fit: cover;">
                             </div>
                             <!-- Descripción -->
                             <div class="col-md-7 ps-md-4">
@@ -387,7 +383,122 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Doctor 2 -->
+        <div class="modal fade" id="modalDr2" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header border-0 pb-0 position-absolute end-0 z-1">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar" style="margin: 15px;"></button>
+                    </div>
                     
+                    <div class="modal-body p-5 pt-4">
+                        <div class="text-center mb-5 mt-2">
+                            <h2 class="fw-bold text-detalle mb-1">Dr. Marco</h2>
+                            <h5 class="text-muted fw-light">Especialista en Endodoncia</h5>
+                        </div>
+                        
+                        <div class="row align-items-center">
+                            <!-- Imagen -->
+                            <div class="col-md-5 mb-4 mb-md-0 text-center">
+                                <img src="assets/fotoDr2.jog" class="img-fluid rounded-4 shadow" alt="Dr. Marco" style="max-height: 300px; object-fit: cover;">
+                            </div>
+                            <!-- Descripción -->
+                            <div class="col-md-7 ps-md-4">
+                                <h6 class="fw-bold mb-3">Sobre el especialista:</h6>
+                                <p class="text-muted mb-0">Con gran experiencia devolviendo sonrisas de manera integral. Dedicado a ofrecer tratamientos vanguardistas sin dolor, con un profundo enfoque humano y atención personalizada para cada paciente que visita nuestra clínica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Doctor 3 -->
+        <div class="modal fade" id="modalDr3" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header border-0 pb-0 position-absolute end-0 z-1">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar" style="margin: 15px;"></button>
+                    </div>
+                    
+                    <div class="modal-body p-5 pt-4">
+                        <div class="text-center mb-5 mt-2">
+                            <h2 class="fw-bold text-detalle mb-1">Dra. Ariadne</h2>
+                            <h5 class="text-muted fw-light">Especialista en Ortodoncia</h5>
+                        </div>
+                        
+                        <div class="row align-items-center">
+                            <!-- Imagen -->
+                            <div class="col-md-5 mb-4 mb-md-0 text-center">
+                                <img src="assets/fotoDr3.jpg" class="img-fluid rounded-4 shadow" alt="Dra. Ariadne" style="max-height: 300px; object-fit: cover;">
+                            </div>
+                            <!-- Descripción -->
+                            <div class="col-md-7 ps-md-4">
+                                <h6 class="fw-bold mb-3">Sobre el especialista:</h6>
+                                <p class="text-muted mb-0">Con gran experiencia devolviendo sonrisas de manera integral. Dedicado a ofrecer tratamientos vanguardistas sin dolor, con un profundo enfoque humano y atención personalizada para cada paciente que visita nuestra clínica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Doctor 4 -->
+        <div class="modal fade" id="modalDr4" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header border-0 pb-0 position-absolute end-0 z-1">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar" style="margin: 15px;"></button>
+                    </div>
+                    
+                    <div class="modal-body p-5 pt-4">
+                        <div class="text-center mb-5 mt-2">
+                            <h2 class="fw-bold text-detalle mb-1">Dra. Yaz</h2>
+                            <h5 class="text-muted fw-light">Especialista en Ortodoncia</h5>
+                        </div>
+                        
+                        <div class="row align-items-center">
+                            <!-- Imagen -->
+                            <div class="col-md-5 mb-4 mb-md-0 text-center">
+                                <img src="assets/fotoDr4.jpg" class="img-fluid rounded-4 shadow" alt="Dra. Yaz" style="max-height: 300px; object-fit: cover;">
+                            </div>
+                            <!-- Descripción -->
+                            <div class="col-md-7 ps-md-4">
+                                <h6 class="fw-bold mb-3">Sobre el especialista:</h6>
+                                <p class="text-muted mb-0">Con gran experiencia devolviendo sonrisas de manera integral. Dedicado a ofrecer tratamientos vanguardistas sin dolor, con un profundo enfoque humano y atención personalizada para cada paciente que visita nuestra clínica.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Doctor 5 -->
+        <div class="modal fade" id="modalDr5" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content border-0 shadow">
+                    <div class="modal-header border-0 pb-0 position-absolute end-0 z-1">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar" style="margin: 15px;"></button>
+                    </div>
+                    
+                    <div class="modal-body p-5 pt-4">
+                        <div class="text-center mb-5 mt-2">
+                            <h2 class="fw-bold text-detalle mb-1">Dra. Yesi</h2>
+                            <h5 class="text-muted fw-light">Especialista en Ortodoncia</h5>
+                        </div>
+                        
+                        <div class="row align-items-center">
+                            <!-- Imagen -->
+                            <div class="col-md-5 mb-4 mb-md-0 text-center">
+                                <img src="assets/fotoDr5.jpg" class="img-fluid rounded-4 shadow" alt="Dra. Yesi" style="max-height: 300px; object-fit: cover;">
+                            </div>
+                            <!-- Descripción -->
+                            <div class="col-md-7 ps-md-4">
+                                <h6 class="fw-bold mb-3">Sobre el especialista:</h6>
+                                <p class="text-muted mb-0">Con gran experiencia devolviendo sonrisas de manera integral. Dedicado a ofrecer tratamientos vanguardistas sin dolor, con un profundo enfoque humano y atención personalizada para cada paciente que visita nuestra clínica.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -433,11 +544,16 @@
                         <span class="fs-4 me-3">⏰</span>
                         <div>
                             <h6 class="fw-bold mb-1">Horario</h6>
-                            <p class="mb-0 text-muted">Lunes a Viernes: 9:00 am - 7:00 pm<br>Sábados: 9:00 am - 2:00 pm</p>
+                            <p class="mb-0 text-muted">
+                                <strong>Lunes a Viernes:</strong><br>
+                                9:00 am - 2:00 pm | 4:00 pm - 8:00 pm<br>
+                                <strong class="mt-2 d-inline-block">Sábados:</strong><br>
+                                9:00 am - 2:00 pm
+                            </p>                        
                         </div>
                     </div>
                         
-                    <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola%2C%20quiero%20agendar%20una%20cita%20en%20el%20Consultorio%20Principal" target="_blank" class="btn btn-primary w-100 fw-bold">
+                    <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola!%0AMe%20interesa%20agendar%20una%20cita" target="_blank" class="btn btn-primary w-100 fw-bold">
                         Agendar aquí
                     </a>
                 </div>
