@@ -211,3 +211,21 @@ a:hover {
     object-position: center; /* Asegura que el centro de la foto siempre sea lo principal */
     background-color: #f8f9fa; /* Un fondo gris muy sutil por si la imagen tarda en cargar */
 }
+
+/* =========================================
+   Imagen Principal del Menú de Tratamientos
+   ========================================= */
+.img-menu-tratamientos {
+    width: 75%;
+    aspect-ratio: 3 / 4; /* Fuerza el formato vertical perfecto */
+    object-fit: cover; /* Recorta los bordes sin deformar la foto */
+    object-position: center; 
+    border-radius: 1rem; /* Mantiene las esquinas redondeadas de tu diseño */
+}
+
+/* =========================================
+   Clases de Utilidad
+   ========================================= */
+.texto-justificado {
+    text-align: justify;
+}
