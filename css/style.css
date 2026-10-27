@@ -229,3 +229,20 @@ a:hover {
 .texto-justificado {
     text-align: justify;
 }
+
+/* =========================================
+   Botón Institucional con Hover 
+   ========================================= */
+.btn-institucional {
+    background-color: var(--azul-logo);
+    color: white;
+    border: none;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.btn-institucional:hover {
+    background-color: #122832; /* Un azul más oscuro */
+    color: white;
+    transform: translateY(-2px); /* Se levanta un poquito al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
