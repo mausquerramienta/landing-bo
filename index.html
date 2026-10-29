@@ -43,49 +43,56 @@
     </nav>
 
     <!-- Hero -->
-    <section id="inicio" class="p-0 mt-5">
+    <section id="inicio" class="p-0">
         <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <!-- Imágenes -->
             <div class="carousel-inner">
                 <!-- Slide 1 -->
-                <div class="carousel-item active" data-bs-interval="5000">
+                <div class="carousel-item active">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="assets/hero1-escritorio">
-                        <img src="assets/hero1-escritorio.jpg" class="d-block w-100 img-carrusel" alt="Instalaciones Dental Biomec">
+                        <source media="(max-width: 768px)" srcset="assets/hero1-movil.jpg">
+                        <img src="assets/hero1-escritorio.jpg" class="d-block w-100 media-carrusel" alt="Dental Biomec">
                     </picture>
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-4 mb-4">
-                        <h2 class="fw-bold text-white mb-2">Transformamos tu sonrisa</h2>
-                        <p class="fs-5 mb-0 text-white">Especialistas en crear sonrisas saludables y hermosas.</p>
-                        <div class="mt-3">
-                            <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola!%0AMe%20interesa%20agendar%20una%20cita." target="_blank" class="btn btn-light fw-bold px-4 py-2 rounded-pill shadow" style="color: var(--azul-logo);">Agenda tu cita</a>
+                    <div class="carousel-caption d-flex flex-column justify-content-end align-items-center h-100" style="padding-bottom: 0.5rem;">
+                        <h2 class="fw-bold text-white mb-2 d-none d-md-block">Transformamos tu sonrisa</h2>
+                        <p class="fs-5 mb-0 text-white d-none d-md-block">Especialistas en crear sonrisas saludables y hermosas.</p>
+                        <div class="mt-3 mb-3">
+                            <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola!%0AMe%20interesa%20agendar%20una%20cita." target="_blank" class="btn btn-light btn-lg fw-bold px-5 py-3 rounded-pill shadow stretched-link" style="color: var(--azul-logo);">Agenda tu cita</a>
                         </div>
                     </div>
                 </div>
                 <!-- Slide 2 -->
-                <div class="carousel-item" data-bs-interval="5000">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="assets/hero2-escritorio">
-                        <img src="assets/hero2-escritorio.jpg" class="d-block w-100 img-carrusel" alt="Tratamientos dentales">
-                    </picture>
-                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 p-4 mb-4">
-                        <h2 class="fw-bold text-white mb-2">Tecnología de Vanguardia</h2>
-                        <p class="fs-5 mb-0 text-white">Atención sin dolor con equipos de última generación.</p>
-                        <div class="mt-3">
-                            <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola!%0AQuiero%20informaci%C3%B3n%20sobre%20la%20promoci%C3%B3n%20de%20Buen%20Fin." target="_blank" class="btn btn-light fw-bold px-4 py-2 rounded-pill shadow">Información</a>
-                        </div>
+                <div class="carousel-item">
+                    <video src="assets/hero2-movil.mp4" class="d-block w-100 d-md-none media-carrusel" autoplay loop muted playsinline></video>
+                    <video src="assets/hero2-escritorio.mp4" class="d-block w-100 d-none d-md-block" autoplay loop muted playsinline style="aspect-ratio:  1200 / 628;object-fit: cover;"></video>
+                    <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola!%0AQuiero%20informaci%C3%B3n%20sobre%20la%20promoci%C3%B3n%20de%20Limpieza%20Dental." target="_blank" class="stretched-link"></a>
+                    <div class="carousel-caption d-none d-md-block" style="bottom: 12%;">
+                        <span class="btn btn-light btn-lg fw-bold px-5 py-3 rounded-pill shadow">Información</span>
                     </div>
                 </div>
                 <!-- Slide 3 -->
-                <div class="carousel-item" data-bs-interval="5000">
-                    <picture>
-                        <source media="(max-width: 768px)" srcset="assets/hero3-celular.jpg">
-                        <img src="assets/hero3-escritorio.jpg" class="d-block w-100 img-carrusel" alt="Equipo Dental Biomec">
-                    </picture>
+                <div class="carousel-item">
+                    <video src="assets/hero3-movil.mp4" class="d-block w-100 d-md-none media-carrusel" autoplay loop muted playsinline></video>
+                    <video src="assets/hero3-escritorio.mp4" class="d-block w-100 d-none d-md-block" autoplay loop muted playsinline style="aspect-ratio:  1200 / 628;object-fit: cover;"></video>
+                    <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola!%0AQuiero%20informaci%C3%B3n%20sobre%20la%20promoci%C3%B3n%20de%20la%20Cirug%C3%ADa%20de%203er%20Molar." target="_blank" class="stretched-link"></a>
+                    <div class="carousel-caption d-none d-md-block" style="bottom: 10%;">
+                        <span class="btn btn-light btn-lg fw-bold px-5 py-3 rounded-pill shadow">Información</span>
+                    </div>
+                </div>
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <video src="assets/hero4-movil.mp4" class="d-block w-100 d-md-none media-carrusel" autoplay loop muted playsinline></video>
+                    <video src="assets/hero4-escritorio.mp4" class="d-block w-100 d-none d-md-block" autoplay loop muted playsinline style="aspect-ratio:  1200 / 628;object-fit: cover;"></video>
+                    <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola!%0AQuiero%20informaci%C3%B3n%20sobre%20la%20promoci%C3%B3n%20de%20Ortodoncia." target="_blank" class="stretched-link"></a>
+                    <div class="carousel-caption d-none d-md-block" style="bottom: 18%; margin-left: 7%;">
+                        <span class="btn btn-light btn-lg fw-bold px-4 py-2 rounded-pill shadow">Información</span>
+                    </div>
                 </div>
             </div>
 
@@ -630,7 +637,7 @@
                     <div class="modal-header text-white position-relative py-3" style="background-color: var(--azul-logo);">
                         <div class="w-100 text-center">
                             <h3 class="modal-title fw-bold mb-1">Dra. Ariadne Yahel Cedillo Martínez</h3>
-                            <small class="d-block mt-1" style="font-weight: 300; opacity: 0.9;">Ced. Prof.  00000000</small>
+                            <small class="d-block mt-1" style="font-weight: 300; opacity: 0.9;">Ced. Prof.  13310127</small>
                         </div>
                         <button type="button" class="btn-close btn-close-white position-absolute top-50 translate-middle-y end-0 me-3 m-0" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
@@ -640,9 +647,9 @@
                                 <img src="assets/fotoDr3.jpg" class="img-fluid rounded-4 shadow" alt="Dra. Ariadne" style="max-height: 300px; object-fit: cover;">
                             </div>
                             <div class="col-md-7 ps-md-4 texto-justificado">
-                                <p class="text-muted mb-2">Gari</p>
-                                <p class="text-muted mb-2"></p>
-                                <p class="text-muted mb-2"></p>
+                                <p class="text-muted mb-2">Cirujana Dentista con posgrado en Ortodoncia y Ortopedia Maxilofacial.</p>
+                                <p class="text-muted mb-2">Cuenta con una sólida formación académica y trayectoria clínica, especializándose en la atención integral y personalizada de tratamientos ortodónticos, que abarcan desde la aplicación de brackets convencionales y sistemas avanzados de autoligado pasivo, hasta el uso de microimplantes (TADS) y la preparación ortodóntica especializada para pacientes candidatos a cirugía ortognática.</p>
+                                <p class="text-muted mb-2">Su enfoque combina la precisión técnica con un trato empático, orientándose a brindar un seguimiento riguroso en la evolución de cada paciente y asegurando que cada etapa del tratamiento se desarrolle en un ambiente de confianza, seguridad y excelencia clínica.</p>
                             </div>
                         </div>
                     </div>
@@ -739,7 +746,7 @@
                             <h5 class="fw-bold mb-1">Horario</h5>
                             <p class="mb-0 text-muted">
                                 <strong style="color: var(--texto-azul);">Lunes a Viernes:</strong><br>
-                                9:00 am - 2:00 pm | 4:00 pm - 8:00 pm<br>
+                                9:00 am - 2:00 pm | 4:00 pm - 7:00 pm<br>
                                 <strong class="mt-2 d-inline-block" style="color: var(--texto-azul);">Sábados:</strong><br>
                                 9:00 am - 2:00 pm
                             </p>                        
@@ -778,19 +785,16 @@
     <!-- Facturación -->
     <section id="facturacion" class="py-5" style="background-color: var(--fondo-blanco);">
         <div class="container">
-            <div class="row align-items-stretch bg-white rounded-4 shadow-sm overflow-hidden border" style="border-color: #eaeaea !important;">
-                <div class="col-md-6 p-0">
-                    <img src="assets/fotoFacturero.jpg" alt="Solicitud de Factura" class="w-100 h-100" style="object-fit: cover; min-height: 350px;">
-                </div>
-                <div class="col-md-6 p-5 d-flex flex-column justify-content-center">
+            <div class="row justify-content-center align-items-stretch bg-white rounded-4 shadow-sm overflow-hidden border" style="border-color: #eaeaea !important;">
+                <div class="col-12 col-md-10 col-lg-8 p-5 d-flex flex-column justify-content-center align-items-center text-center">
                     <h2 class="fw-bold mb-4" style="color: var(--texto-azul);">Solicita tu factura aquí.</h2>
-                    <p class="text-muted mb-3 texto-justificado">
+                    <p class="text-muted mb-3">
                         Recuerda que para evitar inconvenientes con tu factura debes de contestar correctamente el formulario.
                     </p>
-                    <p class="text-muted mb-4 texto-justificado">
+                    <p class="text-muted mb-4">
                         Las facturas únicamente podrán ser solicitadas dentro de los <strong style="color: var(--texto-azul);">3 primeros días después de la compra</strong> o bien el <strong style="color: var(--texto-azul);">último día del mes</strong>.
                     </p>
-                    <div class="alert mb-4 texto-justificado" style="background-color: #f8d7da; color: #842029; border-left: 4px solid #842029; border-radius: 4px;" role="alert">
+                    <div class="alert mb-4 text-start" style="background-color: #f8d7da; color: #842029; border-left: 4px solid #842029; border-radius: 4px;" role="alert">
                         <strong class="fw-bold">NOTA:</strong> No se realizarán facturas que estén fuera del mes correspondiente.
                     </div>
                     <a href="https://api.whatsapp.com/send?phone=525630010676&text=Hola!%0AQuiero%20solicitar%20mi%20factura." target="_blank" class="btn btn-institucional btn-lg fw-bold px-5 py-3 rounded-pill shadow">
