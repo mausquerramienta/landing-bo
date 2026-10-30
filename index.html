@@ -787,17 +787,20 @@
         <div class="text-center mb-5">
             <h2 class="fw-bold">Reseñas</h2>
             <p class="text-muted">Comparte tu experiencia en Dental<strong style="color: var(--texto-azul);">Biomec</strong></p>
+            <button type="button" class="btn btn-institucional btn-lg fw-bold px-4 rounded-pill shadow-sm mt-2" data-bs-toggle="modal" data-bs-target="#modalResena">
+                Dejar una reseña anónima
+            </button>
         </div>
+
         <div id="carruselResenas" class="carousel slide pb-5" data-bs-ride="carousel">
             <div class="carousel-inner px-2 px-md-5">
-                <!-- Primeras 3 reseñas -->
                 <div class="carousel-item active">
                     <div class="px-4">
                         <div class="row g-4 justify-content-center">
                             <!-- Reseña 1 -->
                             <div class="col-12 col-lg-4">
                                 <div class="card tarjeta-resena shadow-sm">
-                                    <div class="card-header text-white text-center p-3">
+                                    <div class="card-header text-white text-center p-3" style="background-color: var(--texto-azul);">
                                         <h5 class="fw-bold mb-1 fs-5">Atención sin dolor</h5>
                                         <div class="fs-5">🦷🦷🦷🦷🦷</div>
                                     </div>
@@ -818,7 +821,7 @@
                             <!-- Reseña 2 -->
                             <div class="col-12 col-lg-4">
                                 <div class="card tarjeta-resena shadow-sm">
-                                    <div class="card-header text-white text-center p-3">
+                                    <div class="card-header text-white text-center p-3" style="background-color: var(--texto-azul);">
                                         <h5 class="fw-bold mb-1 fs-5">Excelente Ortodoncia</h5>
                                         <div class="fs-5">🦷🦷🦷🦷🦷</div>
                                     </div>
@@ -833,7 +836,7 @@
                             <!-- Reseña 3 -->
                             <div class="col-12 col-lg-4">
                                 <div class="card tarjeta-resena shadow-sm">
-                                    <div class="card-header text-white text-center p-3">
+                                    <div class="card-header text-white text-center p-3" style="background-color: var(--texto-azul);">
                                         <h5 class="fw-bold mb-1 fs-5">Urgencia dental</h5>
                                         <div class="fs-5">🦷🦷🦷🦷</div>
                                     </div>
@@ -849,14 +852,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- Segundas 3 reseñas-->
-                 <div class="carousel-item active">
+                <!-- Segundas 3 reseñas -->
+                <div class="carousel-item">
                     <div class="px-4">
                         <div class="row g-4 justify-content-center">
-                            <!-- Reseña 1 -->
+                            <!-- Reseña 4 -->
                             <div class="col-12 col-lg-4">
                                 <div class="card tarjeta-resena shadow-sm">
-                                    <div class="card-header text-white text-center p-3">
+                                    <div class="card-header text-white text-center p-3" style="background-color: var(--texto-azul);">
                                         <h5 class="fw-bold mb-1 fs-5">Atención sin dolor</h5>
                                         <div class="fs-5">🦷🦷🦷🦷🦷</div>
                                     </div>
@@ -866,18 +869,14 @@
                                             La doctora me explicó todo el procedimiento con mucha paciencia.
                                             Además, la recuperación fue rapidísima y sin complicaciones.
                                             Las instalaciones están súper limpias, lo cual me dio mucha confianza.
-                                            Me sacaron la muela del juicio y no sentí absolutamente nada de dolor.
-                                            La doctora me explicó todo el procedimiento con mucha paciencia.
-                                            Además, la recuperación fue rapidísima y sin complicaciones.
-                                            Las instalaciones están súper limpias, lo cual me dio mucha confianza.
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Reseña 2 -->
+                            <!-- Reseña 5 -->
                             <div class="col-12 col-lg-4">
                                 <div class="card tarjeta-resena shadow-sm">
-                                    <div class="card-header text-white text-center p-3">
+                                    <div class="card-header text-white text-center p-3" style="background-color: var(--texto-azul);">
                                         <h5 class="fw-bold mb-1 fs-5">Excelente Ortodoncia</h5>
                                         <div class="fs-5">🦷🦷🦷🦷🦷</div>
                                     </div>
@@ -889,10 +888,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Reseña 3 -->
+                            <!-- Reseña 6 -->
                             <div class="col-12 col-lg-4">
                                 <div class="card tarjeta-resena shadow-sm">
-                                    <div class="card-header text-white text-center p-3">
+                                    <div class="card-header text-white text-center p-3" style="background-color: var(--texto-azul);">
                                         <h5 class="fw-bold mb-1 fs-5">Urgencia dental</h5>
                                         <div class="fs-5">🦷🦷🦷🦷</div>
                                     </div>
@@ -909,6 +908,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- Controles del carrusel -->
             <button class="carousel-control-prev" type="button" data-bs-target="#carruselResenas" data-bs-slide="prev" style="width: 5%;">
                 <span class="carousel-control-prev-icon" style="filter: invert(60%);" aria-hidden="true"></span>
@@ -920,6 +920,49 @@
             </button>
         </div>
     </section>
+
+    <!-- MODAL CON EL FORMULARIO PARA NETLIFY -->
+    <div class="modal fade" id="modalResena" tabindex="-1" aria-labelledby="modalResenaLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4 border-0">
+                <div class="modal-header border-0 text-white" style="background-color: var(--texto-azul); border-radius: 1rem 1rem 0 0;">
+                    <h5 class="modal-title fw-bold" id="modalResenaLabel">Compártenos tu experiencia</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                <div class="modal-body p-4">
+                    <form name="resenas-clinica" method="POST" data-netlify="true">
+                        
+                        <div class="mb-3">
+                            <label for="calificacion" class="form-label fw-bold">Calificación</label>
+                            <select class="form-select" id="calificacion" name="calificacion" required>
+                                <option value="5">★★★★★ (Excelente)</option>
+                                <option value="4">★★★★☆ (Muy bueno)</option>
+                                <option value="3">★★★☆☆ (Bueno)</option>
+                                <option value="2">★★☆☆☆ (Regular)</option>
+                                <option value="1">★☆☆☆☆ (Malo)</option>
+                            </select>
+                        </div>
+
+                        <!-- Nuevo campo para el título de la reseña -->
+                        <div class="mb-3">
+                            <label for="titulo" class="form-label fw-bold">Título breve</label>
+                            <input type="text" class="form-control" id="titulo" name="titulo" placeholder="Ej. Atención sin dolor" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="comentario" class="form-label fw-bold">Tu reseña detallada (anónima)</label>
+                            <textarea class="form-control" id="comentario" name="comentario" rows="4" placeholder="Escribe aquí tu experiencia..." required></textarea>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-institucional btn-lg fw-bold rounded-pill">Enviar Reseña</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Facturación -->
     <section id="facturacion" class="py-5" style="background-color: var(--fondo-blanco);">
