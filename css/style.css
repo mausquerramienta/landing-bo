@@ -1,267 +1,308 @@
 /* =========================================
    Variables: Fuente y colores
    ========================================= */
-:root {
-    --fondo-blanco: #FFFFFF;
-    --texto-azul: #1F4150;
-    --azul-logo: #1F4150;
-    --fuente-sans: 'Quicksand', sans-serif;
-}
+    :root {
+        --fondo-blanco: #FFFFFF;
+        --texto-azul: #1F4150;
+        --azul-logo: #1F4150;
+        --fuente-sans: 'Quicksand', sans-serif;
+    }
 
-html {
-    scroll-padding-top: 65px; 
-    scroll-behavior: smooth; 
-}
+    html {
+        scroll-padding-top: 65px; 
+        scroll-behavior: smooth; 
+    }
 
 /* =========================================
    Estilos globales
    ========================================= */
-body {
-    background-color: var(--fondo-blanco);
-    color: var(--texto-azul);
-    font-family: var(--fuente-sans);
-    font-weight: 400;
-    font-size: 1.15rem;
-}
+    body {
+        background-color: var(--fondo-blanco);
+        color: var(--texto-azul);
+        font-family: var(--fuente-sans);
+        font-weight: 400;
+        font-size: 1.15rem;
+    }
 
-.fw-light {
-    font-weight: 300 !important; /* Light */
-}
+    .fw-light {
+        font-weight: 300 !important; /* Light */
+    }
 
-.fw-normal {
-    font-weight: 400 !important; /* Book */
-}
+    .fw-normal {
+        font-weight: 400 !important; /* Book */
+    }
 
-.fw-biomec {
-    font-weight: 600 !important;
-}
+    .fw-biomec {
+        font-weight: 600 !important;
+    }
 
-h1, h2, h3, h4, h5, h6, .fw-bold, b, strong {
-    font-weight: 700 !important; /* Títulos y resaltados */
-}
+    h1, h2, h3, h4, h5, h6, .fw-bold, b, strong {
+        font-weight: 700 !important; /* Títulos y resaltados */
+    }
 
-.fw-bold, b, strong {
-    font-weight: 600 !important; 
-}
+    .fw-bold, b, strong {
+        font-weight: 600 !important; 
+    }
 
 /* =========================================
    Botones y enlaces
    ========================================= */
-.btn-primary {
-    background-color: var(--azul-logo);
-    border-color: var(--azul-logo);
-    color: #ffffff;
-    padding: 10px 24px;
-    transition: all 0.3s ease;
-}
+    .btn-primary {
+        background-color: var(--azul-logo);
+        border-color: var(--azul-logo);
+        color: #ffffff;
+        padding: 10px 24px;
+        transition: all 0.3s ease;
+    }
 
-.btn-primary:hover {
-    background-color: #122730;
-    border-color: #122730;
-}
+    .btn-primary:hover {
+        background-color: #122730;
+        border-color: #122730;
+    }
 
-a {
-    color: var(--azul-logo);
-    text-decoration: none;
-}
+    a {
+        color: var(--azul-logo);
+        text-decoration: none;
+    }
 
-a:hover {
-    color: #122730;
-}
+    a:hover {
+        color: #122730;
+    }
 
 /* =========================================
    NavBar
    ========================================= */
-.navbar {
-    background-color: #ffffff !important;
-}
+    .navbar {
+        background-color: #ffffff !important;
+    }
 
-.navbar-brand, .nav-link {
-    color: var(--texto-azul) !important;
-    transition: color 0.3s ease;
-}
+    .navbar-brand, .nav-link {
+        color: var(--texto-azul) !important;
+        transition: color 0.3s ease;
+    }
 
-.nav-link:hover {
-    color: var(--azul-logo) !important;
-    font-weight: 600;
-}
+    .nav-link:hover {
+        color: var(--azul-logo) !important;
+        font-weight: 600;
+    }
 
 /* =========================================
    Extras
    ========================================= */
-.text-detalle {
-    color: var(--azul-logo) !important;
-}
+    .text-detalle {
+        color: var(--azul-logo) !important;
+    }
 
 /* =========================================
    Enlace de Instagram
    ========================================= */
-.instagram-link {
-    color: var(--texto-azul);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.instagram-link svg {
-    fill: #E1306C;
-    transition: fill 0.3s ease;
-}
-
-.instagram-link:hover {
-    color: #E1306C !important;
-}
-
-.instagram-link:hover svg {
-    fill: #E1306C;
-}
-
-/* Efecto de las ondas se mueven sutilmente */
-@keyframes wave-animation {
-    0% {
-        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    .instagram-link {
+        color: var(--texto-azul);
+        text-decoration: none;
+        transition: color 0.3s ease;
     }
-    50% {
-        border-radius: 40% 60% 50% 50% / 50% 60% 40% 60%;
+
+    .instagram-link svg {
+        fill: #E1306C;
+        transition: fill 0.3s ease;
     }
-    100% {
-        border-radius: 50% 50% 30% 70% / 50% 30% 70% 50%;
+
+    .instagram-link:hover {
+        color: #E1306C !important;
     }
-}
+
+    .instagram-link:hover svg {
+        fill: #E1306C;
+    }
+
+/* =========================================
+   Efecto de las ondas se mueven sutilmente
+   ========================================= */
+    @keyframes wave-animation {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+        50% {
+            border-radius: 40% 60% 50% 50% / 50% 60% 40% 60%;
+        }
+        100% {
+            border-radius: 50% 50% 30% 70% / 50% 30% 70% 50%;
+        }
+    }
 
 /* =========================================
    Botones de Tratamientos y Modales
    ========================================= */
-.btn-tratamiento {
-    background-color: var(--fondo-blanco);
-    border: 1px solid #eaeaea;
-    color: var(--texto-azul);
-    border-radius: 10px;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
-}
+    .btn-tratamiento {
+        background-color: var(--fondo-blanco);
+        border: 1px solid #eaeaea;
+        color: var(--texto-azul);
+        border-radius: 10px;
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    }
 
-.btn-tratamiento:hover {
-    background-color: #f8f9fa;
-    color: var(--texto-azul);
-    transform: translateX(5px);
-}
+    .btn-tratamiento:hover {
+        background-color: #f8f9fa;
+        color: var(--texto-azul);
+        transform: translateX(5px);
+    }
 
-.btn-tratamiento:hover .texto-tratamiento {
-    text-shadow: 1px 1px 2px rgba(53, 75, 85, 0.4); 
-}
+    .btn-tratamiento:hover .texto-tratamiento {
+        text-shadow: 1px 1px 2px rgba(53, 75, 85, 0.4); 
+    }
 
 /* =========================================
    Tarjetas de Equipo
    ========================================= */
-.card-equipo {
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .card-equipo {
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-.card-equipo:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1) !important;
-}
+    .card-equipo:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 15px 25px rgba(0,0,0,0.1) !important;
+    }
 
 /* =========================================
    Enlace de Facebook
    ========================================= */
-.facebook-link {
-    color: var(--texto-azul);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+    .facebook-link {
+        color: var(--texto-azul);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
 
-.facebook-link svg {
-    fill: #1877F2;
-    transition: fill 0.3s ease;
-}
+    .facebook-link svg {
+        fill: #1877F2;
+        transition: fill 0.3s ease;
+    }
 
-.facebook-link:hover {
-    color: #1877F2 !important;
-}
+    .facebook-link:hover {
+        color: #1877F2 !important;
+    }
 
-.facebook-link:hover svg {
-    fill: #1877F2;
-}
+    .facebook-link:hover svg {
+        fill: #1877F2;
+    }
 
 /* =========================================
    Carrusel Hero Responsivo
    ========================================= */
-.img-carrusel {
-    height: 100%;
-    min-height: auto;
-    max-height: 85vh;
-    object-fit: cover;
-    object-position: center center;
-}
+    .img-carrusel {
+        height: 100%;
+        min-height: auto;
+        max-height: 85vh;
+        object-fit: cover;
+        object-position: center center;
+    }
 
 /* =========================================
    Imágenes de Modales de Tratamientos
    ========================================= */
-.img-tratamiento-modal {
-    width: 100%;
-    height: 280px;
-    object-fit: cover;
-    object-position: center;
-    background-color: #f8f9fa;
-}
+    .img-tratamiento-modal {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        object-position: center;
+        background-color: #f8f9fa;
+    }
 
 /* =========================================
    Imagen Principal del Menú de Tratamientos
    ========================================= */
-.img-menu-tratamientos {
-    width: 75%;
-    aspect-ratio: 3 / 4;
-    object-fit: cover;
-    object-position: center; 
-    border-radius: 1rem;
-}
+    .img-menu-tratamientos {
+        width: 75%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        object-position: center; 
+        border-radius: 1rem;
+    }
 
 /* =========================================
    Clases de Utilidad
    ========================================= */
-.texto-justificado {
-    text-align: justify;
-}
+    .texto-justificado {
+        text-align: justify;
+    }
 
 /* =========================================
    Botón Institucional con Hover 
    ========================================= */
-.btn-institucional {
-    background-color: var(--azul-logo);
-    color: white;
-    border: none;
-    transition: all 0.3s ease;
-}
+    .btn-institucional {
+        background-color: var(--azul-logo);
+        color: white;
+        border: none;
+        transition: all 0.3s ease;
+    }
 
-.btn-institucional:hover {
-    background-color: #122832;
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
-}
+    .btn-institucional:hover {
+        background-color: #122832;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+    }
 
 /* =========================================
    Tamaño para la imagen del Hero en Celulares
    ========================================= */
-.media-carrusel {
-    aspect-ratio: 11 / 8;
-    object-fit: cover;
-    width: 100%;
-}
+    .media-carrusel {
+        aspect-ratio: 11 / 8;
+        object-fit: cover;
+        width: 100%;
+    }
 
 /* =========================================
    Tamaño para la imagen del Hero en Computadoras (Tablets en adelante)
    ========================================= */
-@media (min-width: 768px) {
-    .media-carrusel {
-        aspect-ratio: 1200 / 628;
-        max-height: 80%;
+    @media (min-width: 768px) {
+        .media-carrusel {
+            aspect-ratio: 1200 / 628;
+            max-height: 80%;
+        }
     }
-}
+
+/* =========================================
+   Tarjetas de reseñas
+   ========================================= */
+   .tarjeta-resena {
+    height: 260px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    transform: translateZ(0);
+   }
+
+   .tarjeta-resena .card-header {
+    background-color: var(--texto-azul);
+    border-radius: 12px 12px 0 0 !important;
+   }
+
+   .tarjeta-resena .card-body {
+    background-color: #ffffff;
+    overflow-y: auto;
+    border-radius: 0 0 12px 12px;
+    border: 1px solid #eaeaea;
+    border-top: none;
+    flex-grow: 1;
+   }
+
+/* =========================================
+   Barra de scroll 
+   ========================================= */
+   .tarjeta-resena .card-body::-webkit-scrollbar {
+    width: 6px;
+   }
+
+   .tarjeta-resena .card-body::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 10px;
+   }
