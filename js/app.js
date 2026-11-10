@@ -12,12 +12,15 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-    const formResenas = document.getElementById('formResenas');
+
+    // Modal del formulario de Netlify
     const formResenas = document.getElementById('formResenas');
     if (formResenas) {
         formResenas.addEventListener('submit', function(e) {
-            e.preventDefault(); // Evita que la página recargue o cambie
+            e.preventDefault(); // Evita que la página recargue
+            
             const formData = new FormData(formResenas);
+            formData.append("form-name", "resenas-clinica");
             
             fetch('/', {
                 method: 'POST',
@@ -25,18 +28,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 body: new URLSearchParams(formData).toString()
             })
             .then(() => {
-                // Oculta el modal de llenar reseña
-                const modalResena = bootstrap.Modal.getInstance(document.getElementById('modalResena'));
+                const modalResenaEl = document.getElementById('modalResena');
+                let modalResena = bootstrap.Modal.getInstance(modalResenaEl);
+                if (!modalResena) {
+                    modalResena = new bootstrap.Modal(modalResenaEl);
+                }
                 modalResena.hide();
                 
-                // Limpia los campos del formulario
                 formResenas.reset();
                 
-                // Muestra el nuevo modal de éxito
                 const modalExito = new bootstrap.Modal(document.getElementById('modalExito'));
                 modalExito.show();
             })
-            .catch((error) => alert('Hubo un error al enviar la reseña. Por favor, intenta de nuevo.'));
+            .catch((error) => alert('Hubo un error al enviar la reseña.'));
         });
     }
 });
