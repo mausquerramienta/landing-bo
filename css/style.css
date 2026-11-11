@@ -253,7 +253,7 @@
    Tamaño para la imagen del Hero en Celulares
    ========================================= */
     .media-carrusel {
-        aspect-ratio: 11 / 8;
+        aspect-ratio: 1080 / 1350;
         object-fit: cover;
         width: 100%;
     }
@@ -263,8 +263,10 @@
    ========================================= */
     @media (min-width: 768px) {
         .media-carrusel {
-            aspect-ratio: 1200 / 628;
-            max-height: 80%;
+            aspect-ratio: 1200 / 550;
+            max-height: 80vh;
+            object-fit: contain;
+            background-color: #f8f9fa;
         }
     }
 
@@ -306,3 +308,16 @@
     background-color: #cbd5e1;
     border-radius: 10px;
    }
+
+   /* =========================================
+    Hover Hero
+    ========================================= */
+    .carousel-item img,
+    .carousel-item video {
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item:hover img,
+    .carousel-item:hover video {
+        transform: scale(1.04); 
+    }
