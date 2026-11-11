@@ -253,7 +253,7 @@
    Tamaño para la imagen del Hero en Celulares
    ========================================= */
     .media-carrusel {
-        aspect-ratio: 1080 / 1350;
+        aspect-ratio: 8 / 10;
         object-fit: cover;
         width: 100%;
     }
