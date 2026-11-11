@@ -1,35 +1,46 @@
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll('.nav-link');
     const menuToggle = document.getElementById('navbarNav');
-    const navbar = document.querySelector('.navbar');
 
     navLinks.forEach(function(enlace) {
-        enlace.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href');
-            
-            if (targetId.startsWith('#')) {
-                e.preventDefault();
-                const targetSection = document.querySelector(targetId);
-                
-                if (targetSection) {
-                    if (menuToggle.classList.contains('show')) {
-                        const bsCollapse = bootstrap.Collapse.getInstance(menuToggle);
-                        if (bsCollapse) {
-                            bsCollapse.hide();
-                        }
-                    }
-
-                    setTimeout(() => {
-                        const navbarHeight = navbar.offsetHeight;
-                        const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY - navbarHeight;
-                        
-                        window.scrollTo({
-                            top: targetPosition,
-                            behavior: 'smooth'
-                        });
-                    }, 350); 
+        enlace.addEventListener('click', function() {
+            if (menuToggle.classList.contains('show')) {
+                const bsCollapse = bootstrap.Collapse.getInstance(menuToggle);
+                if (bsCollapse) {
+                    bsCollapse.hide();
                 }
             }
         });
     });
+
+    // Modal del formulario de Netlify
+    const formResenas = document.getElementById('formResenas');
+    if (formResenas) {
+        formResenas.addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita que la página recargue
+            
+            const formData = new FormData(formResenas);
+            formData.append("form-name", "resenas-clinica");
+            
+            fetch('/', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: new URLSearchParams(formData).toString()
+            })
+            .then(() => {
+                const modalResenaEl = document.getElementById('modalResena');
+                let modalResena = bootstrap.Modal.getInstance(modalResenaEl);
+                if (!modalResena) {
+                    modalResena = new bootstrap.Modal(modalResenaEl);
+                }
+                modalResena.hide();
+                
+                formResenas.reset();
+                
+                const modalExito = new bootstrap.Modal(document.getElementById('modalExito'));
+                modalExito.show();
+            })
+            .catch((error) => alert('Hubo un error al enviar la reseña.'));
+        });
+    }
 });
